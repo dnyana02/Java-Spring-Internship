@@ -8,13 +8,9 @@
     <bean id="triangle" class="org.demo.practice.DrawTriangle" >
     
     
-    <!-- constructor tag is used to set a values of parameter in constructor  -->
-    <!-- number of constructor= no. of constructor tag -->
+   
     <constructor-arg value="Tri. ABC"></constructor-arg>
     <constructor-arg value="20"></constructor-arg>
-    
-    
-    <!-- property tag is used to give value to the getter-setter method -->
     
     <property name="type" value="Equilateral"></property>
     
