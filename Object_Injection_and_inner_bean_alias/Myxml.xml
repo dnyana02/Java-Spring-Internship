@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- spring framework file -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="triangle" class="org.demo.practice.DrawTriangle" >
+    
+         <property name="PointA" ref="point0"></property>
+         <property name="PointB" ref="point1"></property>
+         
+         <!-- ==================Inner Bean=================== -->
+         <property name="PointC">
+            <bean  class="org.demo.practice.Point">
+         
+                <property name="x" value="-20" />
+                <property name="y" value="20" />
+    
+            </bean>
+         
+         </property>
+    </bean>
+    
+    <bean id="point0" class="org.demo.practice.Point">
+         
+         <property name="x" value="0" />
+         <property name="y" value="0" />
+    
+    </bean>
+    
+    <bean id="point1" class="org.demo.practice.Point">
+         
+         <property name="x" value="-20" />
+         <property name="y" value="0" />
+    
+    </bean>
+    
+    <bean id="point2" class="org.demo.practice.Point">
+         
+         <property name="x" value="-20" />
+         <property name="y" value="20" />
+    
+    </bean>
+    
+    <!--==================Alias is used to give Duplicate name ======================-->
+    <alias name="triangle" alias="traingle_alias"/>
+</beans>                                                                                      
