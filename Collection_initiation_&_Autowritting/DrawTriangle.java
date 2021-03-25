@@ -4,8 +4,7 @@ import java.util.List;
 
 public class DrawTriangle {
 	
-	//======================Objection Injection & Same for autowiring by name=============================
-	 
+	
 	  private Point pointA;
 	  private Point pointB; 
 	  private Point pointC;
