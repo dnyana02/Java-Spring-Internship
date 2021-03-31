@@ -56,7 +56,6 @@ public class DrawTriangle implements ApplicationContextAware, BeanNameAware /* ,
 
 	@Override
 	public void setApplicationContext(ApplicationContext context) throws BeansException {
-		// TODO Auto-generated method stub
 	
 		this.context=context;
 	}
