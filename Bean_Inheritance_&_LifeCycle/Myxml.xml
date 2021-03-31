@@ -6,44 +6,7 @@
 
 
 
-<!-- 
-<beans>
-  Bean Scope are of 5 types.
-1.singleton :There exists only a single instance of that bean per Spring  container
-2.protoytpe:  a new instance is created for every request of that specific bean within our application code.
-3.request:a new instance is created for each and every HTTP request.
-4.session:a new bean instance for each HTTP session
-5. application: creates a bean instance per Servlet Context.
 
- -->
-   <!-- <bean id="triangle" class="org.demo.practice.DrawTriangle" autowire="byName" scope="prototype"/>
-   
-  
-  <bean id="pointA" class="org.demo.practice.Point">
-         
-         <property name="x" value="0" />
-         <property name="y" value="0" />
-    
-    </bean>
-    
-    <bean id="pointB" class="org.demo.practice.Point">
-         
-         <property name="x" value="-20" />
-         <property name="y" value="0" />
-    
-    </bean>
-    
-    <bean id="pointC" class="org.demo.practice.Point">
-         
-         <property name="x" value="-20" />
-         <property name="y" value="20" />
-    
-    </bean> 
-  
-  
-   
-  
-</beans>   -->
 
 <beans default-init-method="myInit" default-destroy-method="myDestroy">
 <bean id="parenttriangle" class="org.demo.practice.DrawTriangle" >
