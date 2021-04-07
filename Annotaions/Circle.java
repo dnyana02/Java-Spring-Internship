@@ -20,8 +20,8 @@ public class Circle implements Shape{
 	}
 
 
-//	@Required
-	/*
+	
+	/*@Required
 	 * @Autowired
 	 * 
 	 * @Qualifier("circleClass")
