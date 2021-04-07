@@ -10,14 +10,11 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+   
+<context:annotation-config/>
+<context:component-scan base-package="org.demo.practice"/>
 
-  <!--  <bean id="triangle" class="org.demo.practice.DrawTriangle" >
-     
-     <property name="pointA" ref="pointA"></property>
-     <property name="pointB" ref="pointB"></property>
-     <property name="pointC" ref="pointC"></property>
-   </bean>
-   -->
+ 
   
   <bean id="pointA" class="org.demo.practice.Point">
          
@@ -41,14 +38,9 @@
     
     </bean> 
   
-<!-- <bean id="circle" class="org.demo.practice.Circle" >
-     
-     <property name="pointO" ref="pointA"></property>
-     
-</bean> -->
-   <!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" /> -->
-  <context:annotation-config/>
-  <context:component-scan base-package="org.demo.practice"/>
+
+   
+  
 </beans>       
 
 
