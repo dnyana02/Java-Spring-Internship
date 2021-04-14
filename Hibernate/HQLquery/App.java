@@ -30,11 +30,11 @@ public class App
          Session session=sf.openSession();         
          session.beginTransaction();
          
-			
-			 Random r=new Random(); for(int i=1;i<=15;i++) { FirstClass fc=new
-			 FirstClass(); fc.setRoll(i); fc.setFirstname("Student"+i);
-			 fc.setMarks(r.nextInt(100)); session.save(fc); }
-			 
+			/*
+			 * Random r=new Random(); for(int i=1;i<=15;i++) { FirstClass fc=new
+			 * FirstClass(); fc.setRoll(i); fc.setFirstname("Student"+i);
+			 * fc.setMarks(r.nextInt(100)); session.save(fc); }
+			 */
          
          Query q=session.createQuery("from demo_class where marks>50"); // select query
          List <FirstClass> fc=q.list();
@@ -43,7 +43,7 @@ public class App
          {
         	 System.out.println(f);
          }
- 		     int mark=50;
+ 		 int mark=50;
          q=session.createQuery("select sum(marks) from demo_class d where d.marks>= :mark"); // select query
          q.setParameter("mark", mark);
          Long  f= (Long ) q.uniqueResult();
